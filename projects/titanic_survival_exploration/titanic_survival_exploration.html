@@ -4402,7 +4402,9 @@ Make sure to keep track of the various features and conditions you tried before 
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer</strong>: <em>Predictions have an accuracy of 81.93%.</em></p>
+<p><strong>Answer</strong>: <em>Predictions have an accuracy of 81.93%.</em>
+I draw the decision tree by using the titanic_visualizations.py script for each branch of the tree. The first two important branches has already been utilized by considering ‘Sex’ and ‘Age’ and given us the accuracy of 79.35%. Although this is a good accuracy level, it is still below acceptable level of 80%. This means that we generalized the divisions and it includes a lot of false positives predictions especially when we considered all female passengers were survived.
+So I made further investigation by using the visualization script and found out for female branch of the tree, only the ‘Parch’ and ‘SibSp’ features have effect on their survival. So I used them as features and set criteria that brought higher accuracy. Similarly, I applied same method on ‘male’ branch and found out ‘Age’ feature plays important role for this branch together with ‘Parch’ and ‘SibSp’ features. By adjusting the criteria values around the values I obtained from visualization script, I could reach to accuracy of 81.93%.</p>
 
 </div>
 </div>
@@ -4424,7 +4426,7 @@ Make sure to keep track of the various features and conditions you tried before 
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer</strong>: I would consider the categorical, discrete label 'Survived' as outcome and features Sex, Age, Pclass, SibSp, and Parch respectivily'*</p>
+<p><strong>Answer</strong>: I can think of college acceptance as a scenario where supervised learning can be applied. The outcome variable would be the admission or being accepted and the features to be considered could be the SAT score, High School grades, Sex, Age, and other factors that are being considered in regular acceptance processes.     '*</p>
 
 </div>
 </div>
